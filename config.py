@@ -52,7 +52,7 @@ class BaseConfig(object):
     APP_DEBUG = True  # 开启debug模式
     APP_THREADED = True  # 启用多线程模式
     LOG_LEVEL = logging.INFO
-    LOG_PATH = os.path.join(os.path.dirname(BASE_PATH), 'logs/')
+    LOG_PATH = os.path.join(BASE_PATH, 'logs/')
     PID_PATH = os.path.join(BASE_PATH + "{}_{}.pid".format(APP_NAME, APP_PORT))
     LOG_NAME = "{}_{}.log".format(APP_NAME, APP_PORT)
     # 后端存储设置
