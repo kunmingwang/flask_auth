@@ -1,0 +1,28 @@
+{% extends 'auth.html' %}
+{% block content %}
+    <div class="row">
+        <div class="col-12" style="padding-top: 60px;">
+            <div class="col-md-offset-6 col-md-6">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h4><b>用户登录</b></h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <form method="post" id='login_form' class="form-group">
+                                <label class="label_important" id="username">用户名</label>
+                                <input class="form-control" type='text' id='username' name='username' placeholder="请输入用户名" required/><br/>
+                                <label class="label_important" id="password">密码</label>
+                                <input class="form-control" type='password' id='password' name='password' placeholder="请输入密码" required/><br/>
+                                <button class="btn btn-primary form-control" id="submit" name="submit" type="submit">登录</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                        脚踏实地，勇往直前。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

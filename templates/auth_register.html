@@ -1,0 +1,25 @@
+{% extends 'auth.html' %}
+{% block content %}
+    {% import "bootstrap/wtf.html" as wtf %}
+    <div class="row">
+        <div class="col-12" style="padding-top: 60px;">
+            <div class="col-md-offset-6 col-md-6">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h4><b>用户注册</b></h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            {{ form.hidden_tag() }}
+                            {{ wtf.quick_form(form) }}
+                            <p>已有账号? <a href="{{ url_for('auth.login') }}">点击登录</a></p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                        脚踏实地，勇往直前。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
