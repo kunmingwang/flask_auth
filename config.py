@@ -56,7 +56,7 @@ class BaseConfig(object):
     PID_PATH = os.path.join(BASE_PATH + "{}_{}.pid".format(APP_NAME, APP_PORT))
     LOG_NAME = "{}_{}.log".format(APP_NAME, APP_PORT)
     # 后端存储设置
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://flask_auth:**password**@10.231.3.82:3306/flask_auth?charset=UTF8MB4&autocommit=true'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://flask_auth:**password**@127.0.0.1:3306/flask_auth?charset=UTF8MB4&autocommit=true'
     SQLALCHEMY_TRACK_MODIFICATIONS = True
 
 
